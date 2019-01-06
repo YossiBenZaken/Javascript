@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title></title>
+</head>
+<script>
+function print1(a1,a2){
+var str=a1;
+	for(i=a1+1;i<=a2;i++)
+			str += ", " + i + "";
+	return str;
+}
+function print2(a1,a2){
+var str=a1;
+	for(i=a1-1;i>=a2;i--)
+			str += ", " + i + "";
+	document.getElementById("print2").innerHTML = str;
+}
+function sum(a1,a2){
+var sum=0;
+	for(i=a1;i<=a2;i++)
+			sum+=i;
+	return sum;
+}
+</script>
+<body>
+	<button type="button" onclick="alert(print1(1,50))">print 1 to 50</button><br />
+	print 50 to 1 in page = <span id='print2'></span><br>
+	<button type="button" onclick="print2(50,1)">print 50 to 1 (zugi)</button><br />
+	<button type="button" onclick="alert(sum(1,9))">Sum 1 to 9</button>
+</body>
+</html>

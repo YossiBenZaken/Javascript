@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+</head>
+<script>
+function kefel(a1,a2){
+	document.getElementById("kefel").innerHTML = a1*a2;
+}
+function xiluk(a1,a2){
+	document.getElementById("xiluk").innerHTML = a1/a2;
+}
+function muzar(a1,a2,a3)
+{
+	if(a3 == '*')
+		kefel(a1,a2);
+	else
+		xiluk(a1,a2);
+}
+</script>
+<body>
+	kefel = <span id='kefel'></span><br />
+	<button type="button" onclick="kefel(5,10)">Kefel</button><br />
+	xilux = <span id='xiluk'></span><br>
+	<button type="button" onclick="xiluk(10,2)">Xiluk</button><br />
+	<button type="button" onclick="muzar(5,7,'*')">Muzar</button>
+</body>
+</html>
